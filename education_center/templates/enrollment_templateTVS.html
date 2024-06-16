@@ -1,0 +1,11 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the  and  formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the enrollment_init() hook (in hooks/enrollment.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="enrollment-stud_id-<%%VALUE(rec_id)%%>" class="enrollment-stud_id"><%%VALUE(stud_id)%%></td>
+		<td id="enrollment-course_id-<%%VALUE(rec_id)%%>" class="enrollment-course_id"><%%VALUE(course_id)%%></td>
+		<td id="enrollment-score-<%%VALUE(rec_id)%%>" class="enrollment-score"><%%VALUE(score)%%></td>
+		<td id="enrollment-notes-<%%VALUE(rec_id)%%>" class="enrollment-notes"><%%VALUE(notes)%%></td>

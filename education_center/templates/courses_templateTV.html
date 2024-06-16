@@ -1,0 +1,23 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the courses_init() hook (in hooks/courses.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="courses-course_id-<%%VALUE(course_id)%%>" class="courses-course_id text-right"><%%SELECT%%><%%VALUE(course_id)%%><%%ENDSELECT%%></td>
+		<td id="courses-course_name-<%%VALUE(course_id)%%>" class="courses-course_name"><%%SELECT%%><%%VALUE(course_name)%%><%%ENDSELECT%%></td>
+		<td id="courses-instructor_id-<%%VALUE(course_id)%%>" class="courses-instructor_id"><%%SELECT%%><%%VALUE(instructor_id)%%><%%ENDSELECT%%></td>
+		<td id="courses-lab_id-<%%VALUE(course_id)%%>" class="courses-lab_id"><%%SELECT%%><%%VALUE(lab_id)%%><%%ENDSELECT%%></td>
+		<td id="courses-start_date-<%%VALUE(course_id)%%>" class="courses-start_date"><%%SELECT%%><%%VALUE(start_date)%%><%%ENDSELECT%%></td>
+		<td id="courses-end_date-<%%VALUE(course_id)%%>" class="courses-end_date"><%%SELECT%%><%%VALUE(end_date)%%><%%ENDSELECT%%></td>
+		<td id="courses-start_time-<%%VALUE(course_id)%%>" class="courses-start_time"><%%SELECT%%><%%VALUE(start_time)%%><%%ENDSELECT%%></td>
+		<td id="courses-end_time-<%%VALUE(course_id)%%>" class="courses-end_time"><%%SELECT%%><%%VALUE(end_time)%%><%%ENDSELECT%%></td>
+		<td id="courses-mon-<%%VALUE(course_id)%%>" class="courses-mon"><%%SELECT%%><%%VALUE(mon)%%><%%ENDSELECT%%></td>
+		<td id="courses-tue-<%%VALUE(course_id)%%>" class="courses-tue"><%%SELECT%%><%%VALUE(tue)%%><%%ENDSELECT%%></td>
+		<td id="courses-wed-<%%VALUE(course_id)%%>" class="courses-wed"><%%SELECT%%><%%VALUE(wed)%%><%%ENDSELECT%%></td>
+		<td id="courses-thu-<%%VALUE(course_id)%%>" class="courses-thu"><%%SELECT%%><%%VALUE(thu)%%><%%ENDSELECT%%></td>
+		<td id="courses-fri-<%%VALUE(course_id)%%>" class="courses-fri"><%%SELECT%%><%%VALUE(fri)%%><%%ENDSELECT%%></td>
+		<td id="courses-sat-<%%VALUE(course_id)%%>" class="courses-sat"><%%SELECT%%><%%VALUE(sat)%%><%%ENDSELECT%%></td>
+		<td id="courses-sun-<%%VALUE(course_id)%%>" class="courses-sun"><%%SELECT%%><%%VALUE(sun)%%><%%ENDSELECT%%></td>
+		<td id="courses-fees-<%%VALUE(course_id)%%>" class="courses-fees text-right"><%%SELECT%%><%%VALUE(fees)%%><%%ENDSELECT%%></td>

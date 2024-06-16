@@ -1,0 +1,149 @@
+<!-- Edit this file to change the layout of the detail view print preview page -->
+
+
+<div class="panel-heading"><h3 class="panel-title">
+	<strong><%%DETAIL_VIEW_TITLE%%></strong>
+	<div class="hidden-print pull-right">
+		<div class="btn-group">
+			<button type="button" id="print" onclick="window.print();" title="<%%TRANSLATION(Print)%%>" class="btn btn-primary"><i class="glyphicon glyphicon-print"></i> <%%TRANSLATION(Print)%%></button>
+			<button type="submit" id="back" title="<%%TRANSLATION(Cancel Printing)%%>" class="btn btn-default"><i class="glyphicon glyphicon-remove-circle"></i> <%%TRANSLATION(Cancel Printing)%%></button>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</h3></div>
+
+<div class="panel-body">
+	<fieldset class="form-horizontal">
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Course ID</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(course_id)%%></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Course</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="course_name<%%RND1%%>"><%%COMBOTEXT(course_name)%%></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Course Description</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="description<%%RND1%%>"></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Instructor</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="instructor_id<%%RND1%%>"><%%COMBOTEXT(instructor_id)%%></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Class</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="lab_id<%%RND1%%>"><%%COMBOTEXT(lab_id)%%></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Start Date</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%COMBOTEXT(start_date)%%></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">End Date</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%COMBOTEXT(end_date)%%></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Start Time</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(start_time)%%></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">End Time</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(end_time)%%></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Mon</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><input type="checkbox" name="mon" id="mon" value="1" <%%CHECKED(mon)%%> readonly></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Tue</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><input type="checkbox" name="tue" id="tue" value="1" <%%CHECKED(tue)%%> readonly></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Wed</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><input type="checkbox" name="wed" id="wed" value="1" <%%CHECKED(wed)%%> readonly></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Thu</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><input type="checkbox" name="thu" id="thu" value="1" <%%CHECKED(thu)%%> readonly></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Fri</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><input type="checkbox" name="fri" id="fri" value="1" <%%CHECKED(fri)%%> readonly></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Sat</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><input type="checkbox" name="sat" id="sat" value="1" <%%CHECKED(sat)%%> readonly></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Sun</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><input type="checkbox" name="sun" id="sun" value="1" <%%CHECKED(sun)%%> readonly></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Fees</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(fees)%%></div>
+			</div>
+		</div>
+	</fieldset>
+</div>
+<!-- child records -->
+<div class="panel-body">
+	<div id="courses-children"></div>
+</div>
+
+<script>
+	$j(function(){
+		/* prevent loading child records in multiple DVP */
+		if($j('[id=courses-children]').length > 1) return;
+
+		post(
+			'parent-children.php', {
+				ParentTable: 'courses',
+				SelectedID: '<%%VALUE(course_id)%%>',
+				Operation: 'show-children-printable'
+			},
+			'courses-children',
+			'disable-element',
+			'loading-element',
+			apply_persisting_children
+		);
+
+		$j('form').on('click', '#children-tabs button[data-target]', function(){
+			$j(this).toggleClass('active');
+			persist_expanded_child($j(this).attr('id'));
+		});
+	})
+</script>
+

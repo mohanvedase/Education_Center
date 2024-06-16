@@ -1,0 +1,23 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the  and  formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the courses_init() hook (in hooks/courses.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="courses-course_id-<%%VALUE(course_id)%%>" class="courses-course_id text-right"><%%VALUE(course_id)%%></td>
+		<td id="courses-course_name-<%%VALUE(course_id)%%>" class="courses-course_name"><%%VALUE(course_name)%%></td>
+		<td id="courses-instructor_id-<%%VALUE(course_id)%%>" class="courses-instructor_id"><%%VALUE(instructor_id)%%></td>
+		<td id="courses-lab_id-<%%VALUE(course_id)%%>" class="courses-lab_id"><%%VALUE(lab_id)%%></td>
+		<td id="courses-start_date-<%%VALUE(course_id)%%>" class="courses-start_date"><%%VALUE(start_date)%%></td>
+		<td id="courses-end_date-<%%VALUE(course_id)%%>" class="courses-end_date"><%%VALUE(end_date)%%></td>
+		<td id="courses-start_time-<%%VALUE(course_id)%%>" class="courses-start_time"><%%VALUE(start_time)%%></td>
+		<td id="courses-end_time-<%%VALUE(course_id)%%>" class="courses-end_time"><%%VALUE(end_time)%%></td>
+		<td id="courses-mon-<%%VALUE(course_id)%%>" class="courses-mon"><%%VALUE(mon)%%></td>
+		<td id="courses-tue-<%%VALUE(course_id)%%>" class="courses-tue"><%%VALUE(tue)%%></td>
+		<td id="courses-wed-<%%VALUE(course_id)%%>" class="courses-wed"><%%VALUE(wed)%%></td>
+		<td id="courses-thu-<%%VALUE(course_id)%%>" class="courses-thu"><%%VALUE(thu)%%></td>
+		<td id="courses-fri-<%%VALUE(course_id)%%>" class="courses-fri"><%%VALUE(fri)%%></td>
+		<td id="courses-sat-<%%VALUE(course_id)%%>" class="courses-sat"><%%VALUE(sat)%%></td>
+		<td id="courses-sun-<%%VALUE(course_id)%%>" class="courses-sun"><%%VALUE(sun)%%></td>
+		<td id="courses-fees-<%%VALUE(course_id)%%>" class="courses-fees text-right"><%%VALUE(fees)%%></td>

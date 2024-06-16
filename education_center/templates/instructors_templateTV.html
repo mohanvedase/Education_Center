@@ -1,0 +1,12 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the instructors_init() hook (in hooks/instructors.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="instructors-inst_name-<%%VALUE(inst_id)%%>" class="instructors-inst_name"><%%SELECT%%><%%VALUE(inst_name)%%><%%ENDSELECT%%></td>
+		<td id="instructors-email-<%%VALUE(inst_id)%%>" class="instructors-email"><a href="mailto:<%%VALUE(email)%%>" title="<%%VALUE(email)%%>" class="btn btn-default"><i class="glyphicon glyphicon-envelope text-info"></i></a></td>
+		<td id="instructors-phone-<%%VALUE(inst_id)%%>" class="instructors-phone"><%%SELECT%%><%%VALUE(phone)%%><%%ENDSELECT%%></td>
+		<td id="instructors-fulltime-<%%VALUE(inst_id)%%>" class="instructors-fulltime"><%%SELECT%%><%%VALUE(fulltime)%%><%%ENDSELECT%%></td>
+		<td id="instructors-photo-<%%VALUE(inst_id)%%>" class="instructors-photo"><a href="<%%TRANSLATION(ImageFolder)%%><%%VALUE(photo)%%>" data-lightbox="instructors-photo"><img src="thumbnail.php?i=<%%VALUE(photo)%%>&t=instructors&f=photo&v=tv" class="img-thumbnail"></a></td>
